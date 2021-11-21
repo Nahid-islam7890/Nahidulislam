@@ -1,0 +1,14 @@
+    @media (max-width:1199px){
+        .navbar-expand-lg .navbar-collapse{
+            display: none !important;
+        }
+    }
+    @media (max-width:479px){
+        .offcanvas {
+            padding: 10px !important;
+            width: 310px;
+        }
+        .offcanvas-header .btn-close {
+           margin-right: 0 !important;
+        }
+    }

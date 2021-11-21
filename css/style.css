@@ -1,0 +1,188 @@
+/* ====================
+Preloder css Start
+====================== */
+.preloder .centrize {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999999;
+  background: #ECF0F3;
+}
+.preloder .centrize .vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.preloder .centrize .vertical-center .spinner {
+  position: relative;
+}
+.preloder .centrize .vertical-center .spinner .double-bounce1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ff014f;
+  border-radius: 50%;
+  animation: double-bounce1 2s infinite ease-in-out;
+}
+@keyframes double-bounce1 {
+  0%,100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.preloder .centrize .vertical-center .spinner .double-bounce2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ff014f;
+  border-radius: 50%;
+  animation: double-bounce2 2s infinite ease-in-out;
+  animation-delay: -1s;
+  opacity: 0.1;
+}
+@keyframes double-bounce2 {
+  0%,100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+/* ===================
+preloder css end
+==================== */
+/* =================
+header css start 
+================== */
+.navbar {
+  background: #ECF0F3 !important;
+}
+.navbar .container .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 13px !important;
+  padding: 0 20px !important;
+  color: #3c3e41;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.navbar .container .navbar-nav .nav-item .nav-link:hover {
+  color: #ff014f;
+}
+.navbar .container .navbar-nav .active {
+  color: #ff014f !important;
+}
+
+.navbar .container .mobile-toggler {
+  outline: 0;
+  border: 0;
+  background: #ECF0F3;
+}
+.navbar .container .mobile-toggler span {
+  width: 33px;
+  height: 3px;
+  background: #ff014f;
+  display: block;
+}
+.navbar .container .mobile-toggler span:nth-child(2) {
+  margin: 7px 0px;
+}
+
+.offcanvas {
+  background: #ECF0F3;
+  padding: 25px 40px !important;
+  width: 375px;
+}
+.offcanvas .offcanvas-header {
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+}
+.offcanvas .offcanvas-header .btn-close {
+  background: none !important;
+  margin-bottom: 0 !important;
+  color: #ff014f !important;
+  opacity: 1 !important;
+  font-size: 20px;
+  border-radius: 50% !important;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center !important;
+}
+.offcanvas .offcanvas-header .btn-close:hover {
+  background: yellow !important;
+}
+.offcanvas .offcanvas-header .btn-close i {
+  line-height: 30px !important;
+}
+.offcanvas .offcanvas-body {
+  padding: 0 !important;
+}
+.offcanvas .offcanvas-body p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c3e41;
+  line-height: 32px;
+  border-bottom: 1px solid #dce1e4;
+  padding-bottom: 30px;
+}
+.offcanvas .offcanvas-body .menu-list {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.offcanvas .offcanvas-body .menu-list .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 13px !important;
+  color: #3c3e41;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.offcanvas .offcanvas-body .menu-list .navbar-nav .nav-item .nav-link:hover {
+  color: #ff014f;
+}
+.offcanvas .offcanvas-body .menu-list .navbar-nav .active {
+  color: #ff014f !important;
+}
+.offcanvas .offcanvas-body .socail span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #3c3e41;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 20px;
+}
+.offcanvas .offcanvas-body .socail .socail-icon a:last-of-type i {
+  margin-right: 0 !important;
+}
+.offcanvas .offcanvas-body .socail .socail-icon a i {
+  width: 50px;
+  height: 50px;
+  color: #ff014f !important;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+  margin-right: 10px;
+  transform: translateY(10px);
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.offcanvas .offcanvas-body .socail .socail-icon a i:hover {
+  transform: translateY(0);
+  background: #ff014f;
+  color: #ECF0F3 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

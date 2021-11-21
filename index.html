@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahidul Islam</title>
+    <!--- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="imges/index.ico">
+    <!-- Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- preloder start -->
+    <div class="preloder">
+        <div class="centrize">
+            <div class="vertical-center">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloder end -->
+    <!-- header start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="imges/logo-dark.png" alt="">
+          </a>
+          <!-- Mobile-toggler -->
+          <button class="mobile-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- Mobile-toggler end-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-uppercase" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- header end -->
+    <!-- Mobile Side menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <img src="imges/logos-circle.png" alt="SIDE MENU LOGO">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <p class="mb-0 ps-0">Inbio is a personal portfolio template. You can customize all</p>
+        </div>
+        <div class="menu-list">
+          <!-- Side Menu List -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase"  aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase"  href="#">Features</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Resume</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Clients</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Pricing</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Blog</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link  text-uppercase" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- Side Menu end -->
+        </div>
+        <div class="socail">
+          <span class="text-uppercase">Find with me</span>
+          <div class="socail-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Side menu end -->
+
+
+
+    <!-- script  -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- plugin js -->
+    <script src="js/onepageNav.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

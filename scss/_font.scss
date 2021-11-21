@@ -1,0 +1,37 @@
+@import 'variable';
+
+@mixin PoppinsLight  {
+    font-family: $font-primary;
+    font-weight: 300;
+}
+@mixin MontserratLight  {
+    font-family: $font-secondary;
+    font-weight: 300;
+}
+@mixin PoppinsRegular{
+    font-family: $font-primary;
+    font-weight: 400;
+}
+@mixin MontserratRegular{
+    font-family: $font-secondary;
+    font-weight: 400;
+}
+@mixin PoppinsMedium{
+    font-family: $font-primary;
+    font-weight: 500;
+}
+@mixin MontserratMedium{
+    font-family: $font-secondary;
+    font-weight: 500;
+}
+@mixin MontserratBlod{
+    font-family: $font-secondary !important;
+    font-weight: 600;
+}
+@mixin trans($time){
+    transition: all $time linear;
+    -moz-transition: all $time linear;
+    -webkit-transition: all $time linear;
+    -o-transition: all $time linear;
+    
+}
