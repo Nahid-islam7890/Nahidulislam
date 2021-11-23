@@ -1,6 +1,46 @@
     @media (max-width:1199px){
+        .navbar {
+           padding: 0 !important;
+        }
         .navbar-expand-lg .navbar-collapse{
             display: none !important;
+        }
+
+    }
+    @media (min-width:992px) and (max-width:1199px){
+        /*=======================
+         banner-responsive css
+        ================ */
+        #hero .container .content .inner .title {
+            font-size: 47px;
+        }
+        #hero .container .content .inner .selector .ah-headline {
+            font-size: 42px;
+        }
+    }
+    @media (min-width:768px) and (max-width:991px){
+        /*=======================
+         banner-responsive css
+        ================ */
+        #hero .container .content .inner {
+            margin-bottom: 64px;
+        }
+        #hero .container .content .inner p {
+            padding-right: 40px;
+        }
+    }
+    @media (max-width:767px){
+        #hero .container .content .inner{
+            margin-bottom: 60px !important;
+        }
+        #hero .container .content .inner .title {
+            font-size: 50px;
+        }
+        #hero .container .content .inner .selector .ah-headline {
+            font-size: 38px;
+        }
+        #hero .container .content .inner p {
+            padding: 0 !important;
         }
     }
     @media (max-width:479px){
@@ -10,5 +50,16 @@
         }
         .offcanvas-header .btn-close {
            margin-right: 0 !important;
+        }
+        #hero .container .content .inner .title {
+            font-size: 32px;
+        }
+        #hero .container .content .inner .selector .ah-headline {
+            font-size: 25px;
+        }
+    }
+    @media (max-width:479px){
+        #hero .container .content .inner .selector .ah-headline {
+            font-size: 23px;
         }
     }

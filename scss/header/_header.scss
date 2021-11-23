@@ -5,30 +5,59 @@ header css start
 @import 'font';
 .navbar{
     background: $background-color !important;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    transition: 0.3s;
     .container{
         .navbar-brand{
+            img{
+                transition: 0.3s;
+                transform: scale(1);
 
+            }
         }
         .navbar-nav{
+            &:hover{
                 .nav-item{
+                    .nav-link{
+                        opacity: 0.5;
+                    }
+                }
+            }
+                .nav-item{
+                    &:hover{
+                        .nav-link{
+                            opacity: 1 !important;
+                        }
+                    }
+
                     .nav-link{
                         @include MontserratBlod();
                         font-size: 13px !important;
                         padding: 0 20px !important;
                         color: $color-one;
                         @include trans(0.4s);
-                        &:hover{
-                          color: $brand-color;
-                        }
                         
                     }
                     
                 }
                 .active{
                     color:$brand-color !important;
+                    opacity: 1 !important;
                     
                 }
             }
         
+    }
+}
+.fixed-Navbar{
+    position: fixed !important;
+    box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+    .navbar-brand{
+        img{
+            transform: scale(0.9) !important;
+        }
     }
 }

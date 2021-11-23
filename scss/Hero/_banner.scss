@@ -1,0 +1,118 @@
+@import 'variable';
+@import 'font';
+#hero{
+    background: $background-color;
+    .container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        &::before{
+            @include section-Before();
+        }
+        .content{
+            .inner{
+                margin-bottom: 142px;
+                .subtitle{
+                    @include MontserratMedium();
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: $color-one;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                .title{
+                    font-size: 60px;
+                    @include MontserratBlod;
+                    line-height: 75px;
+                    color: $heading-color;
+                    span{
+                        color: $brand-color;
+                    }
+                }
+                .selector{
+                    .ah-headline{
+                        font-size: 48px;
+                        font-family: $font-secondary;
+                        font-weight: 500;
+                        span{
+                            &:first-of-type{
+                                color: $brand-color;
+                            }
+                        }
+                        .ah-words-wrapper{
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 16px;
+                                right: 3px;
+                                width: 2px;
+                                height: 50px;
+                                background-color: $brand-color;
+                            }
+                        }
+                        
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 30px;
+                    @include PoppinsRegular;
+                    color: $color-one;
+                    opacity: 0.8;
+                    padding-right: 80px;
+                    margin-top: 24px;
+                }
+            }
+            .icon{
+                span{
+                    @include MontserratBlod();
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $color-one;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                a{
+                    &:last-of-type{
+                        i{
+                            margin-right: 0 !important;
+                        }
+                    }
+                    i{
+                        width: 50px;
+                        height: 50px;
+                        color: $brand-color !important;
+                        line-height: 50px;
+                        text-align: center;
+                        box-shadow: $shadow;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        transform: translateY(10px);
+                        @include trans (0.4s);
+                        &:hover{
+                            transform: translateY(0);
+                            background: $brand-color;
+                            color: $background-color !important;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .thumbnail{
+            position: relative;
+            z-index: 1;
+            &::before{
+                @include before();
+                height:calc(100% - 130px);
+                bottom: 0;
+            }
+            .inner{
+                img{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

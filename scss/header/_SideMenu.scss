@@ -5,6 +5,7 @@
     background: $background-color;
     padding: 25px 40px !important;
     width: 375px;
+    z-index: 999999;
     .offcanvas-header{
         padding:  0 !important;
         margin-bottom: 20px !important;
@@ -17,11 +18,7 @@
             border-radius: 50% !important;
             box-shadow: $shadow;
             width: 30px !important;
-            height: 30px !important;
-            &:hover{
-                background: yellow !important;
-            }
-            
+            height: 30px !important;  
             text-align: center !important;
             i{
                 line-height: 30px !important;
