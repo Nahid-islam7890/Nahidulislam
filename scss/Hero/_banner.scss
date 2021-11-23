@@ -3,8 +3,8 @@
 #hero{
     background: $background-color;
     .container{
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         position: relative;
         &::before{
             @include section-Before();
@@ -44,11 +44,12 @@
                             &::after{
                                 content: '';
                                 position: absolute;
-                                top: 16px;
+                                top: 50%;
                                 right: 3px;
                                 width: 2px;
                                 height: 50px;
                                 background-color: $brand-color;
+                                transform: translateY(-50%);
                             }
                         }
                         
@@ -107,6 +108,7 @@
                 @include before();
                 height:calc(100% - 130px);
                 bottom: 0;
+                border-radius: 10px;
             }
             .inner{
                 img{

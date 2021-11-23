@@ -5,6 +5,12 @@
         .navbar-expand-lg .navbar-collapse{
             display: none !important;
         }
+        #about .container .thumbnail .inner {
+            padding: 100px 0px;
+        }
+        #about .container .thumbnail .inner {
+            padding: 100px 0px;
+        }
 
     }
     @media (min-width:992px) and (max-width:1199px){
@@ -55,11 +61,26 @@
             font-size: 32px;
         }
         #hero .container .content .inner .selector .ah-headline {
-            font-size: 25px;
+            font-size: 23px;
+        }
+        #about .container .thumbnail .inner h3 {
+            font-size: 41px;
+            
         }
     }
-    @media (max-width:479px){
-        #hero .container .content .inner .selector .ah-headline {
-            font-size: 23px;
+  
+    @media (max-width:379px){
+        #about .container .content .inner .about-items h3 {
+            font-size: 21px;
+        
+        }
+        #about .container .thumbnail .inner span {
+         
+            font-size: 12px;
+           
+        }
+        #about .container .thumbnail .inner h3 {
+            font-size: 30px;
+            
         }
     }
