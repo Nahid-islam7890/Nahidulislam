@@ -1,0 +1,64 @@
+@import 'variable';
+@import 'font';
+#portfoli{
+    background: $background-color;
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        &::before{
+            @include section-Before();
+        }
+        .nav{
+            .nav-item{
+                
+                .nav-link{
+                    font-size: 13px;
+                    @include MontserratBlod;
+                    color: $color-one !important;
+                    text-transform: uppercase;
+                    
+                }
+            }
+            .active{
+                background: $brand-color;
+                border-radius: 5px;
+               
+                .nav-link{
+                    color: $background-color !important;
+                    
+                    
+                }
+            }
+        }
+        .content{
+            .inner{
+                border-radius: 10px;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover{
+                    .overlay{
+                        top: 0;
+                    }
+                }
+                img{
+
+                }
+                .overlay{
+                    background: rgba(255, 1, 77, 0.506);
+                    top: -100%;
+                    left: 0;
+                    @include trans(0.4s);
+                    cursor: pointer;
+                    a{
+                        i{
+                            font-size: 40px;
+                            color: $background-color;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

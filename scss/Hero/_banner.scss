@@ -64,6 +64,28 @@
                     padding-right: 80px;
                     margin-top: 24px;
                 }
+                a{
+                    background: linear-gradient(145deg, #ff014f, #d11414);
+                    color: $brand-color;
+                    font-family: $font-primary;
+                    font-weight: 400;
+                    margin-top: 30px;
+                    position: relative;
+                    z-index: 1;
+                    box-shadow: $shadow;
+                    overflow: hidden;
+                    color: $background-color;
+                    &:hover{
+                        &::before{
+                            opacity: 1;
+                        }
+                        color: $brand-color;
+                    }
+                    &::before{
+                        @include inner-Before();
+                        background: $background-color;
+                    }
+                }
             }
             .icon{
                 span{

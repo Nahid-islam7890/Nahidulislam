@@ -36,6 +36,13 @@
         }
     }
     @media (max-width:767px){
+        .header span{
+            font-size: 12px;
+        }
+        .header h2 {
+            font-size: 50px;
+           
+        }
         #hero .container .content .inner{
             margin-bottom: 60px !important;
         }
@@ -50,6 +57,12 @@
         }
     }
     @media (max-width:479px){
+        .header span {
+            font-size: 12px;
+        }
+        .header h2{
+            font-size: 40px;
+        }
         .offcanvas {
             padding: 10px !important;
             width: 310px;
@@ -66,6 +79,15 @@
         #about .container .thumbnail .inner h3 {
             font-size: 41px;
             
+        }
+        #portfoli .container .nav .nav-item{
+            width: 100%;
+            text-align: center;
+             margin-top: 10px;
+        }
+        #portfoli .container .nav .nav-item .nav-link{
+            box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+           
         }
     }
   

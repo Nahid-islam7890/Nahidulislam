@@ -17,6 +17,31 @@ $(document).ready(
                 animationType: 'clip'
             });
           })
+          $("#portfoli .nav .nav-item").click(
+            function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            }
+        );
+        var mixer = mixitup('.list');
+        $(document).ready(function(){
+            $('.venobox').venobox(
+                  {
+                    closeBackground: "#ffc155",
+                    closeColor: '#fff',
+                    
+                    framewidth : '400px',                            // default: ''
+                    frameheight: '300px',                            // default: ''
+                                          
+                    bgcolor    : '#ff014f ',                          // default: '#fff'
+                    titleattr  : 'data-title',                       // default: 'title'
+                    numeratio  : true,                               // default: false
+                    infinigall : true,                               // default: false
+                    share      : ['facebook', 'twitter', 'download'], // default: []
+                    spinColor: '#ff014f',
+                    
+                  }
+            )
+        });
     }
    
 );

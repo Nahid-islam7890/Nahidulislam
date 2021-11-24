@@ -1,7 +1,48 @@
-
+ @import 'variable';
+ @import 'font';
+ 
+ /*===================
+  common css start
+ =================*/
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+ ul{
+     list-style: none;
+ }
+ a{
+     text-decoration: none
+ }
+ img{
+     vertical-align: middle;
+ }
+ .header{
+     span{
+         font-size: 14px;
+         @include MontserratRegular();
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         color: $brand-color;
+         font-weight: 500;
+         display: block;
+         margin-bottom: 10px;
+         line-height: 14px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: $color-one;
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-family: $font-secondary;
+        }
+ }
 @import 'preloder/preloder';
 @import 'header/header';
 @import 'header/nahid';
 @import 'header/SideMenu';
 @import 'hero/banner';
-@import 'About/about'
+@import 'About/about';
+@import 'portfolio/porfolio';
