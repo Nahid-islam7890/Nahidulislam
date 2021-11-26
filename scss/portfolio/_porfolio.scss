@@ -10,22 +10,28 @@
             @include section-Before();
         }
         .nav{
+            background: $background-gradient;
+            box-shadow: $shadow;
+            border-radius: 10px;
             .nav-item{
-                
+                width: 20%;
                 .nav-link{
                     font-size: 13px;
                     @include MontserratBlod;
                     color: $color-one !important;
                     text-transform: uppercase;
+                    text-align: center;
+                    padding: 33px;
+                    
                     
                 }
             }
             .active{
-                background: $brand-color;
-                border-radius: 5px;
+                background: $background-gradient;
+                border-radius: 10px;
                
                 .nav-link{
-                    color: $background-color !important;
+                    color: $brand-color !important;
                     
                     
                 }

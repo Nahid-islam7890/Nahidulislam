@@ -12,7 +12,7 @@
         .content{
             .inner{
                 .about-items{
-                    border-top: $border-color;
+                    background: $background-gradient;
                     box-shadow: $shadow;
                     padding: 30px 25px;
                     border-radius: 10px;
@@ -50,11 +50,9 @@
                         top: 0;
                         left: 0;
                         z-index: -1;
-                        background: linear-gradient(145deg, #ff014f, #d11414);
+                        background: $background-gradientTow;
                         opacity: 0;
                         @include trans(0.4s);
-                        
-
                     }
                     .icon{
                         width: 50px;

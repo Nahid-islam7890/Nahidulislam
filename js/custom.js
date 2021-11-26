@@ -28,10 +28,8 @@ $(document).ready(
                   {
                     closeBackground: "#ffc155",
                     closeColor: '#fff',
-                    
                     framewidth : '400px',                            // default: ''
-                    frameheight: '300px',                            // default: ''
-                                          
+                    frameheight: '300px',                            // default: ''                         
                     bgcolor    : '#ff014f ',                          // default: '#fff'
                     titleattr  : 'data-title',                       // default: 'title'
                     numeratio  : true,                               // default: false
@@ -42,6 +40,7 @@ $(document).ready(
                   }
             )
         });
+        new WOW().init();
     }
    
 );

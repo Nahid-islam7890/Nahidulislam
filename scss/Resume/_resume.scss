@@ -1,0 +1,200 @@
+@import 'variable';
+@import 'font';
+
+#resume{
+    background: $background-color;
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .nav{
+            background: $background-gradient;
+            box-shadow: $shadow;
+            border-radius: 10px;
+            .nav-item{
+                width: 25%;
+                .nav-link{
+                    width: 100%;
+                    
+                    color: $color-one;
+                    @include MontserratBlod();
+                    padding: 32px 0px !important;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    text-transform: uppercase !important;
+                    &:hover{
+                        color: $brand-color !important;
+                        background: $background-gradient !important;
+                    }
+                }
+                .active{
+                    color: $brand-color !important;
+                    background: $background-gradient !important;
+                }
+            }
+        }
+        .resume-content{
+            padding-left: 31px;
+            border-left: 5px solid #d9dee2;
+            .tabs-header{
+                margin-bottom: 22px;
+                span{
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    color: $brand-color;
+                    @include MontserratRegular();
+                    font-weight: 500;
+                }
+                h3{
+                    @include MontserratBlod();
+                    font-size: 40px;
+                }
+            }
+            .content{
+                padding: 45px 40px;
+                background: $background-gradient;
+                box-shadow: $shadow;
+                border-radius: 10px;
+                position: relative;
+                @include trans(0.4s);
+                &:hover{
+                    background: $background-gradientTow !important;
+                    .heading{
+                        h4{
+                            color: $background-color !important;
+                        }
+                        span{
+                            color: $background-color !important;
+                        }
+                        a{
+                            background: $brand-color !important;
+                            color: $background-color !important;
+                            box-shadow: none !important;
+                        }
+                    }
+                    .inner{
+                        p{
+                            color: $background-color;
+                        }
+                    }
+                }
+                
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 28px;
+                        height: 5px;
+                        background:  #d9dee2;
+                        top: 63px;
+                        transform: translateY(-7%);
+                        
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 104%;
+                        width: 20px;
+                        height: 20px;
+                        background: $brand-color;
+                        top: 55px;
+                        border-radius: 50%;
+                        border: 5px solid #d9dee2;
+                        
+                    }
+
+                .inner{
+                    
+                    .heading{
+                        align-items: center !important;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid $border-color;
+                        h4{
+                            font-family: $font-primary;
+                            font-size: 24px;
+                            line-height: 39px;
+                            margin-bottom: 7px !important;
+                            font-weight: 500;
+                            color: $color-one;
+                            @include trans(0.4s);
+                        }
+                        span{
+                            font-family: $font-primary;
+                            font-size: 14px;
+                            color: $color-one;
+                            font-weight: 400;
+                            display: block;
+                            @include trans(0.4s);
+    
+                        }
+                        a{
+                            font-family: $font-primary;
+                            background: #ffff;
+                            color: $brand-color;
+                            font-size: 15px;
+                            box-shadow: $shadow;
+                            font-weight: 500;
+                            @include trans(0.4s);
+
+                        }
+                        
+                    }
+                    p{
+                        @include PoppinsRegular();
+                        font-size: 18px;
+                        color: $color-one;
+                        line-height: 28px;
+                        opacity: 0.8;
+                        @include trans(0.4s);
+                    }
+                }
+            }
+        }
+        .skills-tabs{
+            
+            .skill-title{
+                margin-bottom: 22px;
+                span{
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    color: $brand-color;
+                    @include MontserratRegular();
+                    font-weight: 500;
+                }
+                h3{
+                    @include MontserratBlod();
+                    font-size: 40px;
+                }
+            }
+            
+            .content{
+                .inner{
+                   .skill-header{
+                       margin-bottom: 10px;
+                    span{
+                        font-size: 14px;
+                        font-family: $font-primary;
+                        color: $color-one;
+                        opacity: 0.8;
+                    }
+                   }
+                    .progress{
+                        height: 13px !important;
+                        padding: 3px !important;
+                        border-radius: 10px;
+                        background: #d9dee2;
+                        
+                        .progress-bar{
+                            border-radius: 10px;
+                            background: linear-gradient(145deg, #fff 0%, $brand-color 100%) !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

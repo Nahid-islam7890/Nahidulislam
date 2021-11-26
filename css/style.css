@@ -372,6 +372,7 @@ header css start
   text-align: center;
   box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   border-radius: 10px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
   margin-right: 10px;
   transform: translateY(10px);
   transition: all 0.4s linear;
@@ -381,7 +382,7 @@ header css start
 }
 #hero .container .content .icon a i:hover {
   transform: translateY(0);
-  background: #ff014f;
+  background: linear-gradient(145deg, #ff014f, #d11414);
   color: #ECF0F3 !important;
 }
 #hero .container .thumbnail {
@@ -401,6 +402,7 @@ header css start
   height: calc(100% - 130px);
   bottom: 0;
   border-radius: 10px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
 }
 #hero .container .thumbnail .inner img {
   vertical-align: middle;
@@ -425,7 +427,7 @@ header css start
   transform: translateX(-50%);
 }
 #about .container .content .inner .about-items {
-  border-top: #dce1e4;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   padding: 30px 25px;
   border-radius: 10px;
@@ -592,19 +594,29 @@ header css start
   left: 50%;
   transform: translateX(-50%);
 }
+#portfoli .container .nav {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+}
+#portfoli .container .nav .nav-item {
+  width: 20%;
+}
 #portfoli .container .nav .nav-item .nav-link {
   font-size: 13px;
   font-family: "Montserrat", sans-serif !important;
   font-weight: 700;
   color: #3c3e41 !important;
   text-transform: uppercase;
+  text-align: center;
+  padding: 33px;
 }
 #portfoli .container .nav .active {
-  background: #ff014f;
-  border-radius: 5px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  border-radius: 10px;
 }
 #portfoli .container .nav .active .nav-link {
-  color: #ECF0F3 !important;
+  color: #ff014f !important;
 }
 #portfoli .container .content .inner {
   border-radius: 10px;
@@ -627,6 +639,199 @@ header css start
 #portfoli .container .content .inner .overlay a i {
   font-size: 40px;
   color: #ECF0F3;
+}
+
+#resume {
+  background: #ECF0F3;
+}
+#resume .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#resume .container .nav {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+}
+#resume .container .nav .nav-item {
+  width: 25%;
+}
+#resume .container .nav .nav-item .nav-link {
+  width: 100%;
+  color: #3c3e41;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  padding: 32px 0px !important;
+  border-radius: 10px;
+  font-size: 13px;
+  text-transform: uppercase !important;
+}
+#resume .container .nav .nav-item .nav-link:hover {
+  color: #ff014f !important;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff) !important;
+}
+#resume .container .nav .nav-item .active {
+  color: #ff014f !important;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff) !important;
+}
+#resume .container .resume-content {
+  padding-left: 31px;
+  border-left: 5px solid #d9dee2;
+}
+#resume .container .resume-content .tabs-header {
+  margin-bottom: 22px;
+}
+#resume .container .resume-content .tabs-header span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ff014f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-weight: 500;
+}
+#resume .container .resume-content .tabs-header h3 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  font-size: 40px;
+}
+#resume .container .resume-content .content {
+  padding: 45px 40px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+#resume .container .resume-content .content:hover {
+  background: linear-gradient(145deg, #ff014f, #d11414) !important;
+}
+#resume .container .resume-content .content:hover .heading h4 {
+  color: #ECF0F3 !important;
+}
+#resume .container .resume-content .content:hover .heading span {
+  color: #ECF0F3 !important;
+}
+#resume .container .resume-content .content:hover .heading a {
+  background: #ff014f !important;
+  color: #ECF0F3 !important;
+  box-shadow: none !important;
+}
+#resume .container .resume-content .content:hover .inner p {
+  color: #ECF0F3;
+}
+#resume .container .resume-content .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 28px;
+  height: 5px;
+  background: #d9dee2;
+  top: 63px;
+  transform: translateY(-7%);
+}
+#resume .container .resume-content .content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 104%;
+  width: 20px;
+  height: 20px;
+  background: #ff014f;
+  top: 55px;
+  border-radius: 50%;
+  border: 5px solid #d9dee2;
+}
+#resume .container .resume-content .content .inner .heading {
+  align-items: center !important;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dce1e4;
+}
+#resume .container .resume-content .content .inner .heading h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 7px !important;
+  font-weight: 500;
+  color: #3c3e41;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+#resume .container .resume-content .content .inner .heading span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #3c3e41;
+  font-weight: 400;
+  display: block;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+#resume .container .resume-content .content .inner .heading a {
+  font-family: "Poppins", sans-serif;
+  background: #ffff;
+  color: #ff014f;
+  font-size: 15px;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  font-weight: 500;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+#resume .container .resume-content .content .inner p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3c3e41;
+  line-height: 28px;
+  opacity: 0.8;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+#resume .container .skills-tabs .skill-title {
+  margin-bottom: 22px;
+}
+#resume .container .skills-tabs .skill-title span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ff014f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-weight: 500;
+}
+#resume .container .skills-tabs .skill-title h3 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  font-size: 40px;
+}
+#resume .container .skills-tabs .content .inner .skill-header {
+  margin-bottom: 10px;
+}
+#resume .container .skills-tabs .content .inner .skill-header span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #3c3e41;
+  opacity: 0.8;
+}
+#resume .container .skills-tabs .content .inner .progress {
+  height: 13px !important;
+  padding: 3px !important;
+  border-radius: 10px;
+  background: #d9dee2;
+}
+#resume .container .skills-tabs .content .inner .progress .progress-bar {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff 0%, #ff014f 100%) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
