@@ -128,8 +128,7 @@
     }
     
     #resume .container .resume-content .tabs-header h3 {
-        
-        font-size: 26px;
+        font-size: 39px;
     }
 }
 
@@ -153,5 +152,8 @@
     }
     #resume .container .resume-content .content {
         padding: 20px 15px;
+    }
+    #resume .container .resume-content .tabs-header h3 {
+        font-size: 28px;
     }
 }

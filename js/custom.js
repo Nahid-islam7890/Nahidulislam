@@ -41,6 +41,7 @@ $(document).ready(
             )
         });
         new WOW().init();
+        AOS.init();
     }
    
 );
