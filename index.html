@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    
     <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -281,8 +283,8 @@
         <!-- portfoli-content end -->
          <!-- tab-content start -->
       <div class="list">
-        <div class="row">
-          <div class="col-xl-4 mix vimeo mb-4 col-lg-6 col-md-6" data-order="1" data-aos="fade-up" data-aos-delay="100"  data-aos-once="true">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 mix vimeo mb-4 col-lg-6 col-md-6" data-order="1" >
             <div class="content">
               <div class="inner position-relative">
                 <img src="imges/portfolio-01.jpg" class="w-100" alt="Portolio-one">
@@ -292,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 mix vimeo mb-4 col-lg-6 col-md-6" data-order="2" data-order="1" data-aos="fade-up" data-aos-delay="300"  data-aos-once="true">
+          <div class="col-xl-4 mix vimeo mb-4 col-lg-6 col-md-6" data-order="2">
             <div class="content">
               <div class="inner position-relative">
                 <img src="imges/portfolio-02.jpg" class="w-100" alt="Portolio-one">
@@ -302,7 +304,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 mix you-tube mb-4 col-lg-6 col-md-6" data-order="3"  data-aos="fade-up" data-aos-delay="500"  data-aos-once="true">
+          <div class="col-xl-4 mix you-tube mb-4 col-lg-6 col-md-6" data-order="3">
             <div class="content">
               <div class="inner position-relative">
                 <img src="imges/portfolio-03.jpg" class="w-100" alt="Portolio-one">
@@ -312,7 +314,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 mix you-tube col-lg-6 col-md-6 " data-filter="4"  data-aos="fade-up" data-aos-delay="700"  data-aos-once="true">
+          <div class="col-xl-4 mix you-tube col-lg-6 col-md-6 "  data-order="4">
             <div class="content" >
               <div class="inner position-relative">
                 <img src="imges/portfolio-04.jpg" class="w-100" alt="Portolio-one">
@@ -322,7 +324,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 mix soundcloud col-lg-6 col-md-6 mb-4 mt-4 mb-xl-0 mb-lg-0 mb-md-0 mt-xl-0 mt-md-0 mt-lg-0" data-order="5"  data-aos="fade-up" data-aos-delay="900"  data-aos-once="true">
+          <div class="col-xl-4 mix soundcloud col-lg-6 col-md-6 mb-4 mt-4 mb-xl-0 mb-lg-0 mb-md-0 mt-xl-0 mt-md-0 mt-lg-0" data-order="5" >
             <div class="content">
               <div class="inner position-relative">
                 <img src="imges/portfolio-05.jpg" class="w-100" alt="Portolio-one">
@@ -332,7 +334,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 mix detail col-lg-6 col-md-6" data-filter="6"  data-aos="fade-up" data-aos-delay="1100"  data-aos-once="true">
+          <div class="col-xl-4 mix detail col-lg-6 col-md-6" data-order="6">
             <div class="content">
               <div class="inner position-relative">
                 <img src="imges/portfolio-06.jpg" class="w-100" alt="Portolio-one">
@@ -881,6 +883,127 @@
       </div>
     </section>
     <!-- Resume end --> 
+    <!-- Clients sectione start -->
+    <section id="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 mt-5 mb-5"  data-aos="fade-up" data-aos-delay="100"  data-aos-once="true" data-aos-duration="500">
+            <div class="header text-center">
+              <span>7+ Years of Experience</span>
+              <h2 class="title mb-0 ps-0">My Resume</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100"  data-aos-once="true" data-aos-duration="500">
+          <div class="col-xl-5">
+            <div class="content">
+              <div class="inner">
+                <span class="subtitle">What Client Says About us</span>
+                <h3 class="title mb-0 ps-0">Our Clients & Reviews</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <div class="clients-container">
+              <div class="clients-item">
+                <div class="inner">
+                  <i class="fas fa-quote-right"></i>
+                  <p class="ps-0 mb-0">There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
+                  <div class="signicer">
+                    <div class="img">
+                      <img src="imges/avatar-1.png" alt="Avatar imges" class="w-100 img-fluid" >
+                    </div>
+                    <div class="title">
+                      <h4 class="mb-0 ps-0">Harley Klien</h4>
+                      <span class="mb-0 ps-0">CEO, Abacus Inc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-item">
+                <div class="inner">
+                  <i class="fas fa-quote-right"></i>
+                  <p class="ps-0 mb-0">There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
+                  <div class="signicer">
+                    <div class="img">
+                      <img src="imges/avatar-1.png" alt="Avatar imges" class="w-100 img-fluid" >
+                    </div>
+                    <div class="title">
+                      <h4 class="mb-0 ps-0">Harley Klien</h4>
+                      <span class="mb-0 ps-0">CEO, Abacus Inc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-item">
+                <div class="inner">
+                  <i class="fas fa-quote-right"></i>
+                  <p class="ps-0 mb-0">There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
+                  <div class="signicer">
+                    <div class="img">
+                      <img src="imges/avatar-1.png" alt="Avatar imges" class="w-100 img-fluid" >
+                    </div>
+                    <div class="title">
+                      <h4 class="mb-0 ps-0">Harley Klien</h4>
+                      <span class="mb-0 ps-0">CEO, Abacus Inc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100"  data-aos-once="true" data-aos-duration="500">
+          <div class="col-xl-12 mt-5">
+            <div class="team-container">
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="inner">
+                  <img src="imges/partner-1.jpg" class="w-100" alt="evanto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients sectione end -->
 
 
 
@@ -893,6 +1016,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/custom.js"></script>
 </body>

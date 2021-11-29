@@ -11,6 +11,19 @@
     #about .container .thumbnail .inner {
         padding: 100px 0px;
     }
+    #clients .container .clients-container .clients-item {
+        margin: 0 15px;
+    }
+    #clients .container .content .inner {
+        padding: 49px 40px;
+    }
+    #clients .container .clients-container {
+        padding: 50px 0px;
+    }
+    #clients .container .team-container .team-item {
+        
+        margin: 0px 15px;
+    }
 
 }
 @media (min-width:992px) and (max-width:1199px){
@@ -37,6 +50,11 @@
     }
     #hero .container .content .inner p {
         padding-right: 40px;
+    }
+    #clients .container .preArrow {
+        left: -52px;
+        top: 44%;
+        transform: none;
     }
     
 }
@@ -96,6 +114,10 @@
     #resume .container .resume-content .content .inner .heading a {
       margin-top: 20px !important;
     }
+    #clients .container .content .inner .title {
+        font-size: 34px;
+       
+    }
 }
 @media (max-width:479px){
     .header span {
@@ -128,7 +150,7 @@
     }
     
     #resume .container .resume-content .tabs-header h3 {
-        font-size: 39px;
+        font-size: 30px;
     }
 }
 

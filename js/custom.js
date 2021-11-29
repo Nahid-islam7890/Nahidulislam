@@ -42,6 +42,48 @@ $(document).ready(
         });
         new WOW().init();
         AOS.init();
+        $('.clients-container').slick({
+            slidesToShow: 2,
+            prevArrow: '<i class="fas fa-chevron-left preArrow"></i>',
+            nextArrow: '<i class="fas fa-chevron-right nextArrow"></i>',
+            responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    autoplay: true,
+                  }
+                },
+            ]    
+        });
+        $('.team-container').slick({
+            slidesToShow: 5,
+            autoplay: true,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
+            responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                    autoplay: true,
+                  }
+                },
+                {
+                    breakpoint: 578,
+                    settings: {
+                      slidesToShow: 1,
+                      arrows: false,
+                      autoplay: true,
+                    }
+                  },
+
+
+            ]    
+        });
     }
    
 );
