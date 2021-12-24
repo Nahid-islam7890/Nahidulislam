@@ -1,0 +1,152 @@
+@import 'variable';
+@import 'font';
+
+#contact{
+    background-color: $background-color;
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        &::before{
+            @include section-Before();
+        }
+        .content{
+            padding: 30px;
+            background: linear-gradient(145deg, #e2e8ec, #ffffff);
+            box-shadow: $shadow;
+            border-radius: 15px;
+            .inner{
+                .img{
+                    border-radius: 15px;
+                    overflow: hidden;
+                    img{
+                        
+                    }
+                    
+                }
+                .contact-text{
+                    margin-bottom: 30px;
+                    h3{
+                        font-size: 29px;
+                        @include MontserratBlod();
+                        margin-top: 24px !important;
+                        margin-bottom: 20px !important;
+                    }
+                    h6{
+                        @include PoppinsRegular();
+                        font-size: 18px;
+                        opacity: 0.9;
+                        color:  $color-one;
+                        margin-bottom: 20px !important;
+                        
+                    }
+                    p{
+                        @include PoppinsRegular();
+                        color:  $color-one;
+                        line-height: 30px;
+                        display: inline-block;
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                    }
+                    a{
+                        @include PoppinsRegular();
+                        color:  $color-one;
+                        line-height: 30px;
+                        display: block;
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                    }
+                    
+                }
+                .icon{
+                    span{
+                        @include MontserratBlod();
+                        font-size: 14px;
+                        color: $color-one;
+                        margin-bottom: 20px;
+                        display: block;
+                    }
+                   a{
+                       &:first-child{
+                           i{
+                               margin-left: 0px;
+                           }
+                       }
+                    i{
+                        width: 50px;
+                        height: 50px;
+                        background: $background-gradient;
+                        color: $brand-color;
+                        text-align: center;
+                        line-height: 50px;
+                        box-shadow: $shadow;
+                        border-radius: 10px;
+                        margin-left: 10px;
+                        transform: translateY(10px);
+                        @include trans(0.4s);
+                        &:hover{
+                            background: $background-gradientTow;
+                            color: #ffffff;
+                            transform: translateY(0);
+                        }
+                    }
+                   }
+                }
+            }
+        }
+        .contact-form{
+            padding: 30px;
+            background: linear-gradient(145deg, #e2e8ec, #ffffff);
+            border-radius: 10px;
+            margin-left: 20px;
+            box-shadow: $shadow;
+            label{
+                @include MontserratRegular();
+                font-size: 12px;
+                color: $color-one;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 500;
+                margin-bottom: 14px !important;
+                display: block;
+                line-height: 22px;
+            }
+            input{
+                height: 55px;
+                padding: 0 15px;
+                border-radius: 6px !important;
+                background-color: #ffffff;
+                border: 2px solid #dadada;
+                margin-bottom: 20px;
+                &:focus{
+                    border: 2px solid $brand-color !important;
+                    box-shadow: none !important;
+                }
+            }
+            textarea{
+                height: 235px;
+                margin-bottom: 20px;
+                
+                border-radius: 6px !important;
+                background-color: #ffffff;
+                border: 2px solid #dadada;
+                &:focus{
+                    border: 2px solid $brand-color !important;
+                    box-shadow: none !important;
+                }
+            }
+            .btn{
+                background: linear-gradient(145deg, #e2e8ec, #ffffff);
+                padding: 15px 35px;
+                color: $brand-color;
+                text-transform: uppercases;
+                @include PoppinsRegular();
+                box-shadow: $shadow;
+                border: none;
+                border-radius: 6px;
+                transform: translateY(10px);
+
+            }
+        }
+    }
+}

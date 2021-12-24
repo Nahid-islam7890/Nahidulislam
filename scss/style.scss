@@ -37,6 +37,7 @@
             margin-top: 15px;
             margin-bottom: 0;
             font-family: $font-secondary;
+            text-transform: capitalize
         }
  }
 @import 'preloder/preloder';
@@ -47,4 +48,5 @@
 @import 'About/about';
 @import 'portfolio/porfolio';
 @import 'Resume/resume';
-@import 'clinets/clients.scss'
+@import 'clinets/clients';
+@import 'contact us/contact';

@@ -56,6 +56,10 @@
         top: 44%;
         transform: none;
     }
+    #contact .container .contact-form {
+       margin-left: 0px;
+        margin-top: 42px;
+    }
     
 }
 @media (max-width:767px){
@@ -118,6 +122,10 @@
         font-size: 34px;
        
     }
+    #contact .container .contact-form {
+        margin-top: 42px;
+    }
+    
 }
 @media (max-width:479px){
     .header span {
